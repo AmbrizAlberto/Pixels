@@ -46,8 +46,17 @@ export default function Posts() {
               </div>
             </div>
 
-
-
+            {/* ABAJO */}
+            <div className='postabajo'>
+              <div class="resumen">
+                <p>10,000 Likes</p>
+                <p>10,000 Comentarios</p>
+              </div>
+              <div class="reactions">
+                <button className="btn btn-primary"><i class="bi bi-star"></i></button>
+                <button className="btn btn-secondary"><i class="bi bi-chat"></i></button>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -82,8 +91,17 @@ export default function Posts() {
               </div>
             </div>
 
-
-
+            {/* ABAJO */}
+            <div className='postabajo'>
+              <div class="resumen">
+                <p>10,000 Likes</p>
+                <p>10,000 Comentarios</p>
+              </div>
+              <div class="reactions">
+                <button className="btn btn-primary"><i class="bi bi-star"></i></button>
+                <button className="btn btn-secondary"><i class="bi bi-chat"></i></button>
+              </div>
+            </div>
 
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function Pixels() {
 
   const [english, setEnglish] = useState(true); // Set initial state to true for English version
 
-  document.addEventListener('contextmenu', function(e) {
+/*   document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
     alert('No puedes inspeccionar esta página.');
   });
@@ -33,7 +33,7 @@ export default function Pixels() {
       e.preventDefault();
       alert('No puedes inspeccionar esta página.');
     }
-  });
+  }); */
 
   return (
     <div className='main'>
@@ -48,7 +48,7 @@ export default function Pixels() {
         <>
           <Navbar/>
           <Header/>
-          <br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br>
           <Posts/>
         </>
       ) : (

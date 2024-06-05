@@ -9,3 +9,9 @@ html {
 body{
     overflow-x: hidden;
 }
+
+br {
+    display: block;
+    content: "";
+    margin: 14vh; /* Ajusta el margen según sea necesario */
+}
