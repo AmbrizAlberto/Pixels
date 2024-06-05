@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    width: 100%;
+    background-color: rgb(229, 228, 228);
+    height: auto;
+}
+
+body{
+    overflow-x: hidden;
+}
