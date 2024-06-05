@@ -12,7 +12,7 @@
   }
 
 .modal {
-    display: flex;
+    display: none;
     position: fixed;
     margin: auto;
     left: 0;
@@ -117,6 +117,7 @@
     position: relative;
     border-radius: 1vh;
     padding: 1%;
+    transition: 500ms;
   }
   
   .modal-content button:hover {
