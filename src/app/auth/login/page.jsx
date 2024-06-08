@@ -1,17 +1,15 @@
-'use client';
+// app/auth/login/page.jsx
 
-import { useState } from 'react';
+'use client'
+
+import { useEffect, useState } from 'react'; // Agrega useState aquí
 import { useForm } from 'react-hook-form';
-import { signIn } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import '../../../../public/css/LoginRegisterForm.css';
 
 export default function LoginRegisterForm() {
-  const [isLogin, setIsLogin] = useState(true);
-  const toggleForm = () => {
-    setIsLogin(!isLogin);
-  };
-
+  const { data: session, status } = useSession();
   const router = useRouter();
   const {
     register,
@@ -19,6 +17,17 @@ export default function LoginRegisterForm() {
     formState: { errors },
   } = useForm();
   const [error, setError] = useState(null);
+  const [isLogin, setIsLogin] = useState(true); // Agrega el estado isLogin
+  const toggleForm = () => {
+    setIsLogin(!isLogin);
+  }; // Define la función toggleForm
+
+  useEffect(() => {
+    // Si el usuario ya está autenticado, redirigirlo a la página principal
+    if (status === 'authenticated') {
+      router.replace('/dashboard');
+    }
+  }, [status, router]);
 
   const handleLoginSubmit = handleSubmit(async (data) => {
     const res = await signIn('credentials', {
@@ -31,7 +40,6 @@ export default function LoginRegisterForm() {
       setError(res.error);
     } else {
       router.push('/dashboard');
-      router.refresh();
     }
   });
 
