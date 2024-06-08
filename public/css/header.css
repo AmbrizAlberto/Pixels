@@ -1,6 +1,6 @@
 .header{
     top: 0;
-    left: 12%;
+    left: 10%;
     position: fixed;
     display: flex;
     margin: auto;
@@ -8,9 +8,9 @@
     border-bottom: .1vh solid black;
     width: 80%;
     height: 10%;
-    z-index: 1;
     backdrop-filter: blur(10px);
-    background-color: rgba(229, 228, 228, 0.629);
+    background-color: rgba(229, 228, 228, 0.585);
+    z-index: 3;
 }
 
 .header .logohdr{

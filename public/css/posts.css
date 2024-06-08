@@ -1,6 +1,10 @@
+html{
+    height: auto;
+    width: auto;
+    background-color: rgb(229, 228, 228);
+}
 
 .publis{
-    top: 55vh;
     position: relative;
     margin-bottom: 10vh;
     width: 70%;

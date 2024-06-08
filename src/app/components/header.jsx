@@ -50,7 +50,7 @@ function Header() {
           <>
             {/* home */}
             <Link href="/">
-              <i className="bi bi-house-door-fill"></i>
+              <i className="bi bi-house-door"></i>
             </Link>
             {/* login */}
             <Link className='imguserhrd' href="/auth/login">
