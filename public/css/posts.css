@@ -1,0 +1,129 @@
+
+.publis{
+    top: 55vh;
+    position: relative;
+    margin-bottom: 10vh;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    color: black;
+    padding: 2%;
+    box-shadow: 0 0 4vh rgba(0, 0, 0, 0.759);
+    border-radius: 4vh;
+}
+
+.infouser{
+    display: flex;
+}
+.containerpost{
+    border-radius: 1.5vh;
+    padding: 2%;
+    padding-bottom: 0%;
+    border: .4vh dashed rgba(0, 0, 0, 0.327);
+}
+
+/* userimg */
+.imguser img{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: .1vh solid black;
+}
+
+.nameuser{
+    font-size: 4vh;
+    align-self: center;
+    margin-left: 1%;
+    text-align: left;
+}
+
+
+.contain{
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.photodesc{
+    border-left: .5vh solid black ;
+    width: 50%;
+    height: auto;
+}
+
+.photodesc h1, h2{
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 3vh;
+}
+
+.photopost{
+    margin-right: 3%;
+    width: 50%;
+}
+/* postimg */
+.photopost img{
+    display: flex;
+    margin: auto;
+    border-radius: 1vh;
+    max-width: 93%;
+    max-height: 60vh;
+    box-shadow: 0 0 3vh rgba(0, 0, 0, 0.789);
+}
+
+.postabajo{
+    width: 95%;
+    padding: 1vh;
+    margin-top: 2%;
+    border-top: .5vh dotted rgba(0, 0, 0, 0.279);
+    font-size: 3vh;
+    display: flex;
+}
+
+.resumen{
+    width: 80%;
+    display: flex;
+}
+
+.resumen p{
+    text-align: left;
+    margin-left: 5%;
+}
+
+.reactions{
+    align-self: center;
+    width: 20%;
+}
+
+.reactions button{
+    border: none;
+    cursor: pointer;
+    font-size: 6vh; 
+    margin-right: 2vh;
+    width: 7vh;
+    height: 7vh;
+    padding: 0%;
+    background-color: transparent;
+    transition: 500ms;
+}
+
+.reactions i.bi.bi-star{
+    transition: 500ms;
+}
+.reactions i.bi.bi-chat{
+    transition: 500ms;
+}
+.reactions i.bi.bi-star:hover{
+    background-color: transparent;
+    color: rgb(179, 75, 158);
+    text-shadow: 0 0 12px rgb(255, 30, 0);
+    transition: 300ms;
+}
+
+.reactions i.bi.bi-chat:hover{
+    background-color: transparent;
+    color: rgb(42, 132, 171);
+    text-shadow: 0 0 10px rgb(0, 251, 255);
+    transition: 300ms;
+}

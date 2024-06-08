@@ -1,0 +1,64 @@
+.header{
+    top: 0;
+    left: 12%;
+    position: fixed;
+    display: flex;
+    margin: auto;
+    color: black;
+    border-bottom: .1vh solid black;
+    width: 80%;
+    height: 10%;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: rgba(229, 228, 228, 0.629);
+}
+
+.header .logohdr{
+    font-size: 6vh;
+    display: flex;
+    margin: auto;
+}
+
+.btnhead{
+    display: flex;
+    margin-top: 1vh;
+    padding: 0%;
+    margin-left: 100vh;
+    position: absolute;
+    align-self: center;
+}
+
+.btnhead button, a{
+    color: black;
+    margin-right: 2vh;
+    padding: 0%;
+    display: flex;
+    cursor: pointer;
+    font-size: 4vh;
+    background-color: transparent;
+    border: none;
+}
+
+.btnhead i{
+    position: relative;
+    margin-top: .5vh;
+    transition: 500ms;
+}
+
+.btnhead i:hover{
+    text-shadow: 0 0 10px black;
+    transition: 500ms;
+}
+
+.imguserhrd img{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: .1vh solid black;
+    transition: 500ms;
+}
+
+.imguserhrd img:hover{
+    box-shadow: 0 0 2vh black;
+    transition: 500ms;
+}
