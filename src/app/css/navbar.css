@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    width: 14vh;
+    height: 100vh;
+    background-color: #817e7e4c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vh;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.555);
+    transition: width 0.5s;
+    color: black;
+}
+
+.navbar .logo {
+    font-size: 5vh;
+}
+
+.navbar .logo{
+    font-size: 5vh;
+}
+.logo {
+    color: black;
+    text-decoration: none;
+    font-size: 5vh;
+    margin-bottom: 1vh;
+}
+
+
+.optionnv {
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.optionnv span{
+    font-size: 3vh;
+    visibility: hidden;
+}
+
+.optionnv i {
+    margin-left: 13vh; /* Ajusta el margen izquierdo del icono cuando no se pasa el ratón */
+    margin-right: 2vh;
+    font-size: 6vh;
+    transition: margin-left 0.5s; /* Agrega una transición suave para el cambio de margen izquierdo */
+}
+
+.optionnv {
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.optionnv span {
+    visibility: hidden;
+}
+
+
+
+
+/* HOVERS */
+button:hover{
+    cursor:alias;
+}
+.navbar:hover {
+    width: 23vh;
+}
+
+.optionnv:hover i {
+    margin-left: 8vh; /* Ajusta el margen izquierdo del icono cuando se pasa el ratón */
+}
+.optionnv:hover span {
+    visibility: visible;
+}
