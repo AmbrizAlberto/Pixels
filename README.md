@@ -1,2 +1,2 @@
 # Pixels
-APP for Photographers - Nextjs Project 
+APP for Photographers - Nextjs & Prisma with PostgreSQL Project
