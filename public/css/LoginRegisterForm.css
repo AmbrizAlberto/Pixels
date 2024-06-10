@@ -39,7 +39,7 @@ html{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.341); /* Color de la superposición (negro con 50% de opacidad) */
-  border-radius: 20px; /* Coincide con el borde del contenedor */
+  border-radius: 2vh; /* Coincide con el borde del contenedor */
   z-index: 1; /* Asegura que la superposición esté detrás del texto */
 }
 
@@ -66,25 +66,25 @@ html{
 .login-register-container {
   width: 50%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 1vh;
 }
 
 .form-toggle {
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 .form-toggle button {
   color: rgba(0, 0, 0, 0.466);
   background-color: transparent;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 2.5vh;
   transition: color 0.3s;
 }
 
@@ -102,23 +102,26 @@ html{
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-top: 6vh;
+  margin-top: 4vh;
 }
 
 .form h2 {
-  margin-bottom: 20px;
+  font-size: 4vh;
+  margin-bottom: 3vh;
   text-align: center;
 }
 
 .form label {
-  margin-bottom: 5px;
+  font-size: 2.4vh;
+  margin-bottom: 1vh;
   font-weight: bold;
 }
 
 .form input {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  border: .5vh solid #ccc;
   border-radius: 1.5vh;
 }
 
@@ -133,14 +136,13 @@ html{
 .form button {
   width: 100%;
   margin: auto;
-  font-size: 2vh !important;
+  font-size: 3vh !important;
   color: black;
   background-color: #ffffff;
-  padding: 4px;
-  font-size: 100%;
+  padding: 1vh;
   position: relative;
   border-radius: 1vh;
-  padding: 1%;
+  padding: 1vh;
   transition: 500ms;
 }
 

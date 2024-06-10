@@ -78,7 +78,7 @@ export default function LoginRegisterForm() {
 
         {isLogin ? (
           <form onSubmit={handleLoginSubmit} className="form login-form">
-            <h2>Iniciar de Sesion</h2>
+            <h2>Iniciar Sesion</h2>
             {error && (
               <p className="bg-red-500 text-lg text-white p-3 rounded mb-2">{error}</p>
             )}
@@ -110,7 +110,7 @@ export default function LoginRegisterForm() {
           </form>
         ) : (
           <form onSubmit={handleRegisterSubmit} className="form register-form">
-            <h2>Register</h2>
+            <h2>Nuevo usuario</h2>
             <label htmlFor="register-username">Usuario</label>
             <input
               type="text"
