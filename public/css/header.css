@@ -28,6 +28,10 @@
     align-self: center;
 }
 
+.btnhead{
+    left: 10vh;
+  }
+
 .btnhead button, a{
     color: black;
     margin-right: 2vh;

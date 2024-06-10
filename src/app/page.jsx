@@ -8,8 +8,6 @@ function HomePage() {
         <div className="hp">
           <h1 className="Homepage texto-superpuesto">PIXELS</h1>
           <h2>UNETE A LA MEJOR COMUNIDAD DE FOTOGRAFIA</h2>
-          <br />
-          <h2>Iniciar Sesion / Registrar</h2>
         </div>
       </a>
 

@@ -3,40 +3,42 @@ html{
   width: 100%;
 }
 
+.header{
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.btnhead{
+  left: 15%;
+}
+
 .mhp {
-  margin-top: 20vh;
-    background-color: rgba(229, 228, 228, 0);
-    width: 100%;
-    height: auto;
-    z-index: 0;
+  background-color: rgba(229, 228, 228, 0);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  margin-top: 13vh;
   }
 
 .ahp{
     display: flex;
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
-    margin: auto;
-    width: 80%;
-    height: 70vh;
-    border: 1px solid rgba(0, 0, 0, 0.319);
-    margin-top: 15vh;
-    border-radius: 3vh;
+    width: 100%;
+    height: 100vh;
     text-decoration: none;
     transition: 500ms;
 }
 .ahp:hover{
-    box-shadow: 0 0 4vh black;
     transition: 500ms;
 }
   .hp {
     display: flex;
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
-    margin: auto;
     width: 100%;
     height: 100%;
-    border-radius: 3vh;
-    box-shadow: 0 0 3vh rgba(0, 0, 0, 0.473);
     background-image: url(https://images8.alphacoders.com/992/thumb-1920-992848.jpg);
     background-size: cover; /* Asegura que la imagen cubra completamente el contenedor sin distorsionarse */
     background-position: center; /* Centra la imagen en el contenedor */
@@ -45,7 +47,6 @@ html{
   }
   
   .hp::before {
-    border-radius: 3vh;
     content: "";
     position: absolute;
     top: 0;
@@ -53,8 +54,10 @@ html{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.341); /* Color de la superposición (negro con 50% de opacidad) */
-    border-radius: 20px; /* Coincide con el borde del contenedor */
+    background-image: linear-gradient(180deg, rgb(229, 228, 228) 0%, #0000003b 11%, #0000003b 70%, rgb(229, 228, 228) 99%);
     z-index: 1; /* Asegura que la superposición esté detrás del texto */
+    height: 101%;
+    border: none;
   }
   
   .hp {
@@ -70,7 +73,7 @@ html{
     -webkit-background-clip: text; /* Clipa el fondo al texto (Safari y Chrome) */
     background-clip: text; /* Clipa el fondo al texto (Firefox) */
     filter: drop-shadow(0px 0px 10px rgb(14, 14, 14)) drop-shadow(0px 0px 1px rgb(0, 0, 0)); /* Añade bordes blancos alrededor del texto */
-    margin: 0vh  0vh 0vh 0vh;
+    margin: 10vh  0vh 0vh 0vh;
     text-align: center;
     font-weight: bold;
     display: block; /* Asegura que el h1 se comporte como un bloque */
@@ -84,7 +87,7 @@ html{
   .hp h2 {
     z-index: 2; /* Asegura que el texto esté encima de la superposición */
     color: rgba(255, 255, 255, 0.427); /* Hace que el color del texto sea transparente */
-    font-size: 5vh; /* Tamaño del texto */
+    font-size: 8vh; /* Tamaño del texto */
     background: inherit; /* Hereda el fondo del contenedor */
     -webkit-background-clip: text; /* Clipa el fondo al texto (Safari y Chrome) */
     background-clip: text; /* Clipa el fondo al texto (Firefox) */
@@ -93,6 +96,8 @@ html{
     margin: 5vh 0 auto -3vh; /* Ajusta los márgenes superior e inferior */
     display: block; /* Asegura que el h2 se comporte como un bloque */
     text-align: center;
+    width: 80%;
+    margin: auto;
   }
   
 /* FOOTERS */
