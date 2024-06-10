@@ -72,13 +72,13 @@ export default function LoginRegisterForm() {
       </div>
       <div className="login-register-container">
         <div className="form-toggle">
-          <button onClick={toggleForm} className={isLogin ? 'active' : ''}>Iniciar Sesion</button>
+          <button onClick={toggleForm} className={isLogin ? 'active' : ''}>Iniciar Sesión</button>
           <button onClick={toggleForm} className={!isLogin ? 'active' : ''}>Registrarte</button>
         </div>
 
         {isLogin ? (
           <form onSubmit={handleLoginSubmit} className="form login-form">
-            <h2>Iniciar Sesion</h2>
+            <h2>Iniciar Sesión</h2>
             {error && (
               <p className="bg-red-500 text-lg text-white p-3 rounded mb-2">{error}</p>
             )}
