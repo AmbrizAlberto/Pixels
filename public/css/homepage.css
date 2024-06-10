@@ -1,10 +1,11 @@
 html{
-    height: auto;
-    width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .mhp {
-    background-color: rgb(229, 228, 228);
+  margin-top: 20vh;
+    background-color: rgba(229, 228, 228, 0);
     width: 100%;
     height: auto;
     z-index: 0;
@@ -56,6 +57,10 @@ html{
     z-index: 1; /* Asegura que la superposición esté detrás del texto */
   }
   
+  .hp {
+    display: block; /* Asegura que el contenedor mantenga el flujo de bloque */
+  }
+  
   .hp h1 {
     position: relative;
     z-index: 2; /* Asegura que el texto esté encima de la superposición */
@@ -65,10 +70,31 @@ html{
     -webkit-background-clip: text; /* Clipa el fondo al texto (Safari y Chrome) */
     background-clip: text; /* Clipa el fondo al texto (Firefox) */
     filter: drop-shadow(0px 0px 10px rgb(14, 14, 14)) drop-shadow(0px 0px 1px rgb(0, 0, 0)); /* Añade bordes blancos alrededor del texto */
+    margin: 0vh  0vh 0vh 0vh;
+    text-align: center;
     font-weight: bold;
+    display: block; /* Asegura que el h1 se comporte como un bloque */
+  }
+
+  .hp br{
+    margin: 0;
+    margin-top: 5%;
   }
   
-
+  .hp h2 {
+    z-index: 2; /* Asegura que el texto esté encima de la superposición */
+    color: rgba(255, 255, 255, 0.427); /* Hace que el color del texto sea transparente */
+    font-size: 5vh; /* Tamaño del texto */
+    background: inherit; /* Hereda el fondo del contenedor */
+    -webkit-background-clip: text; /* Clipa el fondo al texto (Safari y Chrome) */
+    background-clip: text; /* Clipa el fondo al texto (Firefox) */
+    filter: drop-shadow(0px 0px 10px rgb(14, 14, 14)) drop-shadow(0px 0px 1px rgb(0, 0, 0)); /* Añade bordes blancos alrededor del texto */
+    font-weight: bold;
+    margin: 5vh 0 auto -3vh; /* Ajusta los márgenes superior e inferior */
+    display: block; /* Asegura que el h2 se comporte como un bloque */
+    text-align: center;
+  }
+  
 /* FOOTERS */
 footer {
     margin: auto;

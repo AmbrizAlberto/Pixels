@@ -68,17 +68,17 @@ export default function LoginRegisterForm() {
   return (
     <div className='Login'>
       <div className='infologin'>
-        <h1>Pixels</h1>
+        <h1>PIXELS</h1>
       </div>
       <div className="login-register-container">
         <div className="form-toggle">
-          <button onClick={toggleForm} className={isLogin ? 'active' : ''}>Login</button>
-          <button onClick={toggleForm} className={!isLogin ? 'active' : ''}>Register</button>
+          <button onClick={toggleForm} className={isLogin ? 'active' : ''}>Iniciar Sesion</button>
+          <button onClick={toggleForm} className={!isLogin ? 'active' : ''}>Registrarte</button>
         </div>
 
         {isLogin ? (
           <form onSubmit={handleLoginSubmit} className="form login-form">
-            <h2>Login</h2>
+            <h2>Iniciar de Sesion</h2>
             {error && (
               <p className="bg-red-500 text-lg text-white p-3 rounded mb-2">{error}</p>
             )}
@@ -86,9 +86,9 @@ export default function LoginRegisterForm() {
             <input
               type="email"
               id="login-email"
-              {...register('email', { required: 'Email is required' })}
+              {...register('email', { required: 'Correo es requerido' })}
               className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
-              placeholder="user@email.com"
+              placeholder="usuario@email.com"
             />
             {errors.email && (
               <span className="text-red-500 text-xs">{errors.email.message}</span>
@@ -98,7 +98,7 @@ export default function LoginRegisterForm() {
             <input
               type="password"
               id="login-password"
-              {...register('password', { required: 'Password is required' })}
+              {...register('password', { required: 'Contraseña es requerida' })}
               className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
               placeholder="******"
             />
@@ -115,9 +115,9 @@ export default function LoginRegisterForm() {
             <input
               type="text"
               id="register-username"
-              {...register('username', { required: 'Username is required' })}
+              {...register('username', { required: 'Usuario es requerido' })}
               className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
-              placeholder="yourUser123"
+              placeholder="Usuario123"
             />
             {errors.username && (
               <span className="text-red-500 text-xs">{errors.username.message}</span>
@@ -127,9 +127,9 @@ export default function LoginRegisterForm() {
             <input
               type="email"
               id="register-email"
-              {...register('email', { required: 'Email is required' })}
+              {...register('email', { required: 'Correo es requerido' })}
               className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
-              placeholder="user@email.com"
+              placeholder="usuario@email.com"
             />
             {errors.email && (
               <span className="text-red-500 text-xs">{errors.email.message}</span>
@@ -139,7 +139,7 @@ export default function LoginRegisterForm() {
             <input
               type="password"
               id="register-password"
-              {...register('password', { required: 'Password is required' })}
+              {...register('password', { required: 'Contraseña es requerida' })}
               className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
               placeholder="********"
             />
@@ -151,7 +151,7 @@ export default function LoginRegisterForm() {
             <input
               type="password"
               id="register-confirm-password"
-              {...register('confirmPassword', { required: 'Confirm Password is required' })}
+              {...register('confirmPassword', { required: 'Requerido confirmar contraseña' })}
               className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full"
               placeholder="********"
             />

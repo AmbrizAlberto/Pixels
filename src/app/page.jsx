@@ -7,6 +7,9 @@ function HomePage() {
       <a className='ahp' href="/auth/login">
         <div className="hp">
           <h1 className="Homepage texto-superpuesto">PIXELS</h1>
+          <h2>UNETE A LA MEJOR COMUNIDAD DE FOTOGRAFIA</h2>
+          <br />
+          <h2>Iniciar Sesion / Registrar</h2>
         </div>
       </a>
 
@@ -14,9 +17,9 @@ function HomePage() {
         <div className="footer-container">
           <div className="footer-about">
             <h4>Sobre Nosotros</h4>
-            <p>ShareSphere. Foro web desarrollado como proyecto escolar.</p>
-            <p>Universidad de Colima.</p>
-            <p>FIE</p>
+            <p>Pixels... Mas que fotografia</p>
+            <p>La mejor para fotografos</p>
+            <p>Al Dev</p>
           </div>
           <div className="footer-links">
             <h4>Enlaces Rápidos</h4>
@@ -31,10 +34,10 @@ function HomePage() {
           <div className="footer-social">
             <h4>Síguenos</h4>
             <ul className="social-icons">
-              <li><a href="https://www.twitter.com" target="_blank">Portafolios</a></li>
-              <li><a href="https://www.twitter.com" target="_blank">Github</a></li>
+              <li><a href="https://ambrizalberto.github.io/Portfolio/" target="_blank">Portafolio</a></li>
+              <li><a href="https://github.com/AmbrizAlberto" target="_blank">Github</a></li>
               <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-              <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/alberto-ambriz-chavez/" target="_blank">LinkedIn</a></li>
             </ul>
           </div>
         </div>
