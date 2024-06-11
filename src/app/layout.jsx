@@ -1,8 +1,8 @@
 // layout.jsx
 
-import Header from "./components/header";
+import Header from "../components/header";
 import { Inter } from "next/font/google";
-import ClientProvider from "./components/clientprovider"; // Importa el nuevo componente
+import ClientProvider from "../components/ClientProvider"; // Importa el nuevo componente
 import "../../public/css/LoginRegisterForm.css"
 import "../../public/css/main.css"
 

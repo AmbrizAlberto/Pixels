@@ -11,9 +11,9 @@ import RootLayout1 from "./layout"
 import styles from "../../../public/css/main.css";
 
 /* COMPONENTS */
-import Navbar from '../components/navbar';
-import Header from '../components/header';
-import Posts from '../components/posts';
+import Navbar from '../../components/navbar';
+import Header from '../../components/header';
+import Posts from '../../components/posts';
 
 
 function Pixels() {

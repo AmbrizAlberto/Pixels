@@ -6,7 +6,7 @@
 import Link from 'next/link';
 
 /* IMPORT CSS */
-import "../../../public/css/navbar.css"
+import "../../public/css/navbar.css"
 
 /* BOOTSTRAP ICONS */
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -22,21 +22,17 @@ export default function Navbar() {
                 </div>
 
                 <div className="access">
-                  <a className="optionnv" href="/">
-                    <i className="bi bi-house-fill"></i>
-                    <span>Feed</span>
-                  </a>
                   <a className="optionnv" href="/about">
                     <i className="bi bi-search-heart-fill"></i>
-                    <span>Explore</span>
+                    <span>Explorar</span>
                   </a>
                   <a className="optionnv" href="/">
                     <i className="bi bi-trophy-fill"></i>
-                    <span>Contest</span>
+                    <span>Concursos</span>
                   </a>
                   <a className="optionnv" href="/">
-                    <i className="bi bi-person-circle"></i>
-                    <span>Perfil</span>
+                    <i class="bi bi-chat-left-dots-fill"></i>                    
+                    <span>Discusiones</span>
                   </a>
 
                   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

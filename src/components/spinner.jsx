@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import "../../../public/css/spinner.css"; // Corrige el nombre del archivo aquí
+import "../../public/css/spinner.css"; // Corrige el nombre del archivo aquí
 
 const Spinner = () => {
   return (

@@ -34,7 +34,7 @@ function HomePage() {
             <ul className="social-icons">
               <li><a href="https://ambrizalberto.github.io/Portfolio/" target="_blank">Portafolio</a></li>
               <li><a href="https://github.com/AmbrizAlberto" target="_blank">Github</a></li>
-              <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+              <li><a href="https://www.instagram.com/https.al.dev/" target="_blank">Instagram</a></li>
               <li><a href="https://www.linkedin.com/in/alberto-ambriz-chavez/" target="_blank">LinkedIn</a></li>
             </ul>
           </div>

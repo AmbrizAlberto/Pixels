@@ -3,7 +3,7 @@
 'use client';
 import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
-import LoadingScreen from '../components/LoadingScreen';
+import LoadingScreen from '../../components/LoadingScreen';
 
 export default function RootLayout1({ children }) {
 

@@ -8,8 +8,8 @@ import { useEffect, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 
 /* IMPORT CSS */
-import "../../../public/css/header.css";
-import "../../../public/css/modal.css";
+import "../../public/css/header.css";
+import "../../public/css/modal.css";
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 

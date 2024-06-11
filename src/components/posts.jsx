@@ -6,7 +6,7 @@
 import Link from 'next/link';
 
 /* IMPORT CSS */
-import "../../../public/css/posts.css"
+import "../../public/css/posts.css"
 
 /* BOOTSTRAP ICONS */
 import 'bootstrap-icons/font/bootstrap-icons.css';

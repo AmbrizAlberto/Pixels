@@ -2,7 +2,7 @@
 
 'use client'
 
-import { useEffect, useState } from 'react'; // Agrega useState aquí
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
@@ -11,21 +11,23 @@ import '../../../../public/css/LoginRegisterForm.css';
 export default function LoginRegisterForm() {
   const { data: session, status } = useSession();
   const router = useRouter();
+
+  // Define la función toggleForm  
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const [error, setError] = useState(null);
-  const [isLogin, setIsLogin] = useState(true); // Agrega el estado isLogin
+  const [isLogin, setIsLogin] = useState(true);
   const toggleForm = () => {
     setIsLogin(!isLogin);
-  }; // Define la función toggleForm
+  }; 
 
+  // Si el usuario ya está autenticado, redirigirlo a la página principal
   useEffect(() => {
-    // Si el usuario ya está autenticado, redirigirlo a la página principal
     if (status === 'authenticated') {
-      router.replace('/dashboard');
+      router.replace('/Home');
     }
   }, [status, router]);
 
@@ -39,7 +41,7 @@ export default function LoginRegisterForm() {
     if (res.error) {
       setError(res.error);
     } else {
-      router.push('/dashboard');
+      router.push('/Home');
     }
   });
 
