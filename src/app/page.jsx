@@ -1,6 +1,24 @@
+'use client'
+
+
 import '../../public/css/homepage.css';
 
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { useSession } from 'next-auth/react';
+
 function HomePage() {
+
+  const router = useRouter();
+  const { data: session, status } = useSession();
+
+  // Si el usuario ya está autenticado, redirigirlo a la página principal
+  useEffect(() => {
+    if (status === 'authenticated') {
+      router.replace('/Home');
+    }
+  }, [status, router]);
+
   return (
     <div className="mhp" href="/auth/login">
       
