@@ -1,129 +1,102 @@
-/* MODAL */
+/* modal.css */
 
 @keyframes modalFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-5vh);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.modal {
-    display: none;
-    position: fixed;
-    margin: auto;
-    left: 0;
-    width: 200vh;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.213);
-    backdrop-filter: blur(3vh);
-    transition: 500ms;
-    z-index: 1;
-    animation: modalFadeIn 0.5s ease-out; /* Aplicar la animación */
-  }
-  
-  .modal-content {
-    margin: auto;
-    margin-top: 10vh;
-    background-color: #ffffff;
-    width: 50%;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 2vh;
-    transition: 500ms;
-    color: black;
-    box-shadow: 0 0 4vh black;
-  }
-  
-  .close {
-    color: #505050;
-    float: right;
-    font-size: 4vh;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 500ms;
-    font-weight: bold;
-  }
-  
-  .close:hover {
-    color: rgb(255, 0, 0);
-    transition: 500ms;
-  }
-  
-  /* Estilos del formulario dentro del modal */
-  .modal-content form {
-    width: 100% !important;
-    margin: auto !important;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .modal-content label {
-    text-align: center;
-    color: black;
-    margin-bottom: 10px;
-  }
-  
-  .modal-content input {
-    color: black;
-    margin-bottom: 3vh;
-    margin-top: 1vh;
-    position: relative;
-    left: 20%;
-    width: 60%;
-    top: 8px;
-    padding: 8px;
-    border: none;
-    border-radius: 20px;
-    background-color: #00000048;
-  }
-  
-  .modal-content img {
-    max-width: 20%;
-    margin: auto;
-    position: relative;
-    border-radius: 20px;
-  }
-  
-  .modal-content textarea {
-    color: white;
-    margin-bottom: 15px;
-    padding: 8px;
-    border: none;
-    border-radius: 10px;
-    background-color: #0000001d;
-  }
-  
-  .modal-content select {
-    color: rgba(0, 0, 0, 0.62);
-    margin-bottom: 15px;
-    padding: 8px;
-    border: none;
-    border-radius: 10px;
-    background-color: #00000022;
-  }
-  
-  .modal-content button {
-    width: 50%;
-    margin: auto;
-    font-size: 2vh !important;
-    color: black;
-    background-color: #ffffff;
-    padding: 4px;
-    font-size: 100%;
-    position: relative;
-    border-radius: 1vh;
-    padding: 1%;
-    transition: 500ms;
-  }
-  
-  .modal-content button:hover {
-    cursor: pointer;
-    background-color: #9e9e9e;
-    color: rgb(0, 0, 0);
-    transition: 500ms;
-    box-shadow: .6vh .9vh .5vh rgba(0, 0, 0, 0.816);
-  }
+
+.modal-overlay {
+  position: fixed; /* Cambiado de absolute a fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.421);
+  backdrop-filter: blur(3vh);
+  transition: 500ms;
+  color: black;
+  overflow: none;
+}
+
+.modal-content {
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  width: 50%;
+  padding: 2vh;
+  border: .2vh solid #888;
+  border-radius: 2vh;
+  transition: 500ms;
+  color: black;
+  box-shadow: 0 0 4vh black;
+  animation: modalFadeIn 0.5s ease-out; /* Aplicar la animación */
+}
+
+.close {
+  color: #505050;
+  float: right;
+  font-size: 4vh;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 500ms;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: rgb(255, 0, 0);
+  transition: 500ms;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form label {
+  font-size: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh  ;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  font-size: 2vh;
+  width: 80%;
+  margin: auto;
+  color: black;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  border: none;
+  border-radius: 2vh;
+  background-color: #0000001d;
+}
+
+.modal-content form button {
+  font-size: 2vh;
+  margin-top: 2vh;
+  padding: 1vh;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: .7vh;
+  cursor: pointer;
+}

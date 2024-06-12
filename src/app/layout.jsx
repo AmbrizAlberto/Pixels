@@ -1,6 +1,5 @@
-// layout.jsx
+// Home/Layout.jsx
 
-import Header from "../components/header";
 import { Inter } from "next/font/google";
 import ClientProvider from "../components/ClientProvider"; // Importa el nuevo componente
 import "../../public/css/LoginRegisterForm.css"
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ClientProvider>
-          <Header />
           {children}
         </ClientProvider>
       </body>

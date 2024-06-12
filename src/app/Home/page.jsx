@@ -1,5 +1,7 @@
+// Home/page.jsx
+
 "use client"
-import {signOut} from 'next-auth/react'
+import { signOut } from 'next-auth/react'
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
@@ -14,42 +16,24 @@ import styles from "../../../public/css/main.css";
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import Posts from '../../components/posts';
-
+import Modal from '../../components/modal'; // Importar el nuevo componente Modal
 
 function Pixels() {
-
   const [english, setEnglish] = useState(true); // Set initial state to true for English version
+  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para gestionar el modal
 
-  /* document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-    alert('No puedes inspeccionar esta página.');
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'F12' || 
-        (e.ctrlKey && e.shiftKey && e.key === 'I') || 
-        (e.ctrlKey && e.shiftKey && e.key === 'J') || 
-        (e.ctrlKey && e.key === 'U')) {
-      e.preventDefault();
-      alert('No puedes inspeccionar esta página.');
-    }
-  }); */
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <div className='main'>
-
-{/*       <div className='btnlinks'>
-        <button onClick={() => setEnglish(!english)}>
-            <i className="bi bi-translate"></i>
-        </button>
-      </div> */}
-  
       {english ? (
         <>
-          <Navbar/>
-          <Header/>
+          <Navbar />
+          <Header onToggleModal={toggleModal} /> {/* Pasar la función toggleModal al Header */}
           <br></br><br></br><br></br><br></br><br></br><br></br>
-          <Posts/>
+          <Posts />
         </>
       ) : (
         <>
@@ -57,6 +41,7 @@ function Pixels() {
         </>
       )}
 
+      <Modal isOpen={isModalOpen} onClose={toggleModal} /> {/* Renderizar el Modal */}
 
       <Head>
         <script src='script/scrollreveal.js' async defer />
@@ -64,4 +49,4 @@ function Pixels() {
     </div>
   );
 }
-export default Pixels
+export default Pixels;
