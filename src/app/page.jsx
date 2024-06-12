@@ -4,7 +4,7 @@
 
 import '../../public/css/homepage.css';
 import Header from '@/components/header';
-import Modal from '@/components/Modal';
+import Modal from '@/components/modal';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
