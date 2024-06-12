@@ -1,6 +1,6 @@
 .header{
     top: 0;
-    left: 12%;
+    left: 20vh;
     position: fixed;
     display: flex;
     margin: auto;
@@ -20,17 +20,13 @@
 }
 
 .btnhead{
+    left: 65%;
+    position: absolute;
     display: flex;
     margin-top: 1vh;
     padding: 0%;
-    margin-left: 100vh;
-    position: absolute;
     align-self: center;
 }
-
-.btnhead{
-    left: 10vh;
-  }
 
 .btnhead button, a{
     color: black;
