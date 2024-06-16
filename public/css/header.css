@@ -1,13 +1,13 @@
 .header{
+    width: 99%;
+    height: 10%;
+    left: .5%;
     top: 0;
-    left: 20vh;
     position: fixed;
     display: flex;
     margin: auto;
     color: black;
     border-bottom: .1vh solid black;
-    width: 80%;
-    height: 10%;
     backdrop-filter: blur(10px);
     background-color: rgba(229, 228, 228, 0.585);
     z-index: 3;

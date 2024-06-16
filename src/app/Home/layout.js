@@ -5,6 +5,9 @@ import Head from 'next/head';
 import React, { useState, useEffect } from 'react';
 import LoadingScreen from '../../components/LoadingScreen';
 
+import Navbar from '../../components/navbar';
+import Header from '../../components/header';
+import Posts from '../../components/posts';
 export default function RootLayout1({ children }) {
 
   const [loading, setLoading] = useState(true);
