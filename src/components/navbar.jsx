@@ -16,30 +16,30 @@ export default function Navbar() {
 
         <div className="navbar">
                 <div className="logo">
-                  <a className="logo" style={{ fontSize: "24px", backgroundColor: "transparent", border: "none" }} href="/">
+                  <Link className="logo" style={{ fontSize: "24px", backgroundColor: "transparent", border: "none" }} href="/Home">
                     <span>PX</span>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="access">
-                  <a className="optionnv" href="/about">
+                  <Link className="optionnv" href="/Explore">
                     <i className="bi bi-search-heart-fill"></i>
                     <span>Explorar</span>
-                  </a>
-                  <a className="optionnv" href="/">
-                    <i className="bi bi-trophy-fill"></i>
-                    <span>Concursos</span>
-                  </a>
-                  <a className="optionnv" href="/">
+                  </Link>
+                  <Link className="optionnv" href="/Discussions">
                     <i class="bi bi-chat-left-dots-fill"></i>                    
                     <span>Discusiones</span>
-                  </a>
+                  </Link>
+                  <Link className="optionnv" href="/Home">
+                    <i className="bi bi-trophy-fill"></i>
+                    <span>Concursos</span>
+                  </Link>
 
                   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                  <a className="optionnv" href="/">
+                  <Link className="optionnv" href="/Home">
                     <i className="bi bi-gear-wide-connected"></i>
                     <span>Settings</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
     );
