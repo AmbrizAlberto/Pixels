@@ -42,13 +42,13 @@
 }
 
 .optionnv span{
-    font-size: 3vh;
+    font-size: 2.5vh;
     visibility: hidden;
 }
 
 .optionnv i {
-    margin-left: 13vh; /* Ajusta el margen izquierdo del icono cuando no se pasa el ratón */
-    margin-right: 2vh;
+    margin-left: 40%; /* Ajusta el margen izquierdo del icono cuando no se pasa el ratón */
+    margin-right: 1vh;
     font-size: 6vh;
     transition: margin-left 0.5s; /* Agrega una transición suave para el cambio de margen izquierdo */
 }
@@ -76,11 +76,11 @@ button:hover{
     cursor:alias;
 }
 .navbar:hover {
-    width: 23vh;
+    width: 25vh;
 }
 
 .optionnv:hover i {
-    margin-left: 8vh; /* Ajusta el margen izquierdo del icono cuando se pasa el ratón */
+    margin-left: 15%; /* Ajusta el margen izquierdo del icono cuando se pasa el ratón */
 }
 .optionnv:hover span {
     visibility: visible;
