@@ -46,6 +46,7 @@
 }
 
 .btnhead i:hover{
+    cursor: pointer;
     text-shadow: 0 0 10px black;
     transition: 500ms;
 }
@@ -59,6 +60,7 @@
 }
 
 .imguserhrd img:hover{
+    cursor: pointer;
     box-shadow: 0 0 2vh black;
     transition: 500ms;
 }

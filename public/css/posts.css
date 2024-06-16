@@ -113,6 +113,7 @@
     transition: 500ms;
 }
 .reactions i.bi.bi-star:hover{
+    cursor: pointer;
     background-color: transparent;
     color: rgb(179, 75, 158);
     text-shadow: 0 0 12px rgb(255, 30, 0);
@@ -120,6 +121,7 @@
 }
 
 .reactions i.bi.bi-chat:hover{
+    cursor: pointer;
     background-color: transparent;
     color: rgb(42, 132, 171);
     text-shadow: 0 0 10px rgb(0, 251, 255);
