@@ -1,3 +1,8 @@
+.Posts br{
+    display: block;
+    content: "";
+    margin: 14vh; /* Ajusta el margen según sea necesario */
+}
 .publis{
     position: relative;
     margin-bottom: 10vh;
@@ -9,7 +14,11 @@
     box-shadow: 0 0 4vh rgba(0, 0, 0, 0.759);
     border-radius: 4vh;
 }
-
+br {
+    display: block;
+    content: "";
+    margin: 14vh; /* Ajusta el margen según sea necesario */
+}
 .infouser{
     display: flex;
 }

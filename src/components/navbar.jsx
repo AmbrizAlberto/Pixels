@@ -34,8 +34,6 @@ export default function Navbar() {
                     <i className="bi bi-trophy-fill"></i>
                     <span>Concursos</span>
                   </Link>
-
-                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                   <Link className="optionnv" href="/Home">
                     <i className="bi bi-gear-wide-connected"></i>
                     <span>Settings</span>

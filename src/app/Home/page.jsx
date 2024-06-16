@@ -32,7 +32,6 @@ function Pixels() {
         <>
           <Navbar />
           <Header onToggleModal={toggleModal} /> {/* Pasar la función toggleModal al Header */}
-          <br></br><br></br><br></br><br></br><br></br><br></br>
           <Posts />
         </>
       ) : (

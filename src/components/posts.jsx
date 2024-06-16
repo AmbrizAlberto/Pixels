@@ -14,7 +14,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export default function Posts() {
     return (
 
-      <div>
+      <div className='Posts'>
+        <br />
         
         <div className="publis">
 
@@ -106,6 +107,7 @@ export default function Posts() {
           </div>
         </div>
 
+        <br />
       </div>
 
         
