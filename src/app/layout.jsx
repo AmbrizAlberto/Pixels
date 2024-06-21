@@ -15,6 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Pixels</title>
+        <meta name="description" content="El universo de la fotografia"/>
+        <link rel="icon" href="https://www.freeiconspng.com/uploads/camera-icon-png--clipart-best-23.png" />
+      </head>
       <body className={inter.className}>
         <ClientProvider>
           {children}
