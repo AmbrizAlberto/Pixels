@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>Pixels</title>
         <meta name="description" content="El universo de la fotografia"/>
-        <link rel="icon" href="https://www.freeiconspng.com/uploads/camera-icon-png--clipart-best-23.png" />
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/72/72179.png" />
       </head>
       <body className={inter.className}>
         <ClientProvider>
