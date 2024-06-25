@@ -8,6 +8,15 @@ export async function GET(){
     return NextResponse. json("obteniendo tareas")
 } 
 
-export function POST() {
-    return NextResponse. json("creando tareas")
+export async function POST(request) {
+    const {title, description} = await request.json()
+
+    const newPost = await db.post.create({
+        data: {
+            title,
+            description
+        }
+    })
+
+    return NextResponse. json(newPost)
 }
