@@ -11,14 +11,16 @@ import "../../public/css/posts.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-async function loadPosts(){
+/* async function loadPosts(){
   return await prisma.post.findMany()
 }
+ */
 
-export default async function Posts() {
+export default /* async */ function Posts() {
 
-  const posts = await loadPostsI();
+  /* const posts = await loadPosts();
   console.log(posts);
+ */
 
   return (
 
@@ -71,7 +73,7 @@ export default async function Posts() {
 
       <div className="publis">
         <div className='containerpost'>
-          
+
           {/* INFO DE USUARIO */}
           <div className='infouser'>
             <div className='imguser'>
@@ -115,9 +117,6 @@ export default async function Posts() {
 
       <br />
     </div>
-
-      
-      
-      
+  
   );
 }
