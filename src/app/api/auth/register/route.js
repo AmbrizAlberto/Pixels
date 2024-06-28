@@ -1,3 +1,5 @@
+// app/api/auth/[...nextauth]/route.js
+
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
 import db from "@/libs/db";
