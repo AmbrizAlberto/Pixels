@@ -1,13 +1,12 @@
 // components/Modal.jsx
-
 import React from 'react';
 import "../../public/css/modal.css";
 import { useRouter } from 'next/navigation';
 
-const Modal = ({ isOpen, onClose }) => {  // userId removido de las props
-  if (!isOpen) return null;
-
+const Modal = ({ isOpen, onClose }) => {  
   const router = useRouter();
+
+  if (!isOpen) return null;
 
   const onSubmit = async (e) => {
     e.preventDefault();
