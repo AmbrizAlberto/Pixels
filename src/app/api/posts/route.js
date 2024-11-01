@@ -16,13 +16,14 @@ export async function GET() {
                 },
             },
         });
-
+        console.log('Fetched posts:', posts);  // Añadir log para verificar las publicaciones
         return NextResponse.json(posts);
     } catch (error) {
         console.error('Error fetching posts:', error);
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
     }
 }
+
 
 export async function POST(request) {
     try {

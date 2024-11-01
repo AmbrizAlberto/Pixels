@@ -22,6 +22,22 @@ function Pixels() {
   const [english, setEnglish] = useState(true); // Set initial state to true for English version
   const [isModalOpen, setIsModalOpen] = useState(false); // Estado para gestionar el modal
 
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+      const fetchPosts = async () => {
+          try {
+              const response = await fetch('/api/posts');
+              const data = await response.json();
+              setPosts(data);
+          } catch (error) {
+              console.error('Error fetching posts:', error);
+          }
+      };
+      fetchPosts();
+  }, []);
+
+
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
