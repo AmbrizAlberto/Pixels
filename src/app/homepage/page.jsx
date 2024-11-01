@@ -1,11 +1,11 @@
 "use client"
 import { useSession, signOut } from 'next-auth/react';
-import { useRouter } from 'next/router';  // Importa useRouter para redirigir
+import { useRouter } from 'next/router';  
 import { useState, useEffect } from 'react';
 import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import Posts from '../../components/posts';
-import Modal from '../../components/modal'; // Importar el nuevo componente Modal
+import Modal from '../../components/modal'; 
 
 function Pixels() {
   const { data: session, status } = useSession();  // Usar useSession para verificar si el usuario está autenticado

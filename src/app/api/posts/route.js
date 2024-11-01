@@ -4,6 +4,16 @@ import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 import prisma from '@/libs/db';
 import { NextResponse } from 'next/server';
+import cloudinary from 'cloudinary';
+
+
+
+// Inicializa Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 export async function GET() {
     try {
@@ -16,7 +26,7 @@ export async function GET() {
                 },
             },
         });
-        console.log('Fetched posts:', posts);  // Añadir log para verificar las publicaciones
+        console.log('Fetched posts:', posts);
         return NextResponse.json(posts);
     } catch (error) {
         console.error('Error fetching posts:', error);
@@ -24,29 +34,37 @@ export async function GET() {
     }
 }
 
-
-export async function POST(request) {
+export async function POST(req) {
     try {
-        const { title, description } = await request.json();
         const session = await getServerSession(authOptions);
-
         if (!session || !session.user) {
-            throw new Error('User session not found');
+            return NextResponse.json({ error: 'User session not found' }, { status: 401 });
         }
 
         const userId = session.user.id;
 
-        console.log('Session:', session);  // Añadir este log para verificar la sesión completa
-        console.log('User ID:', userId);  // Añadir este log para verificar el userId
+        // Obtener el cuerpo de la solicitud como FormData
+        const formData = await req.formData();
+        const title = formData.get("title");
+        const description = formData.get("description");
+        const imageFile = formData.get("image");
 
-        if (!userId) {
-            throw new Error('User ID not found in session');
+        if (!title || !description) {
+            return NextResponse.json({ error: 'Title and description are required.' }, { status: 400 });
+        }
+
+        let imageUrl = null;
+        if (imageFile) {
+            // Subir la imagen a Cloudinary
+            const uploadResponse = await cloudinary.v2.uploader.upload(imageFile.path);
+            imageUrl = uploadResponse.secure_url; // URL de la imagen cargada
         }
 
         const newPost = await prisma.post.create({
             data: {
                 title,
                 description,
+                imageUrl: imageUrl || null,
                 author: {
                     connect: { id: userId },
                 },

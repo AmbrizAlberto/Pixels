@@ -37,20 +37,17 @@ export const authOptions = {
   },
   callbacks: {
     async session({ session, token }) {
-      console.log("JWT Token in session callback:", token); // Añadir este log
       if (token.id) {
         session.user.id = token.id;
       } else {
         console.error("Token ID is undefined in session callback");
       }
-      console.log("Session after modification:", session); // Añadir este log
       return session;
     },
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
       }
-      console.log("Token after jwt callback:", token); // Añadir este log
       return token;
     },
   }
