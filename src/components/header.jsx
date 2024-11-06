@@ -1,10 +1,9 @@
-// components/Header.jsx
-
 'use client';
 
 /* IMPORT PRINCIPAL LIBRARIES */
 import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 /* IMPORT CSS */
 import "../../public/css/header.css";
@@ -12,7 +11,12 @@ import "../../public/css/header.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Header({ onToggleModal }) {
+  const router = useRouter();
   const { data: session } = useSession();
+
+  const handleProfileRedirect = () => {
+    router.push('/Profile'); // Redirigir a la página del perfil
+  };
 
   return (
     <div className="header">
@@ -34,7 +38,7 @@ function Header({ onToggleModal }) {
         ) : (
           <>
             {/* Perfil */}
-            <button className='imguserhrd'>
+            <button className='imguserhrd' onClick={handleProfileRedirect}>
               <img src="https://3.bp.blogspot.com/-MAtrroD5mj8/UKl-JropN-I/AAAAAAABQ9Y/2kIMSnm_4Jw/s1600/Beletsi_Lake_Parnitha_HDR_.jpg" alt="User" />
             </button>
             {/* Boton subir nueva foto */}
