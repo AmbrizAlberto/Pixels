@@ -17,6 +17,8 @@ import Navbar from '../../components/navbar';
 import Header from '../../components/header';
 import Posts from '../../components/posts';
 import Modal from '../../components/modal'; // Importar el nuevo componente Modal
+import Profiledata from '@/components/profiledata';
+import ProfilePhotos from '@/components/profilephotos';
 
 function Pixels() {
   const [english, setEnglish] = useState(true); // Set initial state to true for English version
@@ -32,6 +34,8 @@ function Pixels() {
         <>
           <Navbar />
           <Header onToggleModal={toggleModal} /> {/* Pasar la función toggleModal al Header */}
+          <Profiledata />
+          <ProfilePhotos/>
         </>
       ) : (
         <>

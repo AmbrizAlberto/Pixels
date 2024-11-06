@@ -1,0 +1,54 @@
+.profiledata{
+    position: fixed;
+    border-right: 1px solid black;
+    margin: auto;
+    margin-left: 23vh;
+    margin-top: 16vh;
+    padding: 3vh;
+    width: 25%;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.profiledata img{
+    margin: auto;
+    align-items: center;
+    align-self: center;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.profiledata h1{
+    font-size: 4vh;
+    padding: 0;
+    margin: 0;
+    margin-top: 2vh;
+}
+.profiledata h2{
+    font-size: 2vh;
+    padding: 0;
+}
+
+
+.profilephotos {
+    position: absolute;
+    margin: auto;
+    margin-left: 73vh;
+    margin-top: 16vh;
+    padding: 3vh;
+    width: 40%;
+    border-radius: 1vh;
+    display: grid; /* Usamos Grid Layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Establece columnas automáticas que se ajustan */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.profilephotos img {
+    width: 100%; /* Las imágenes se expanden para llenar las celdas */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra la celda sin distorsionarse */
+    border-radius: 0.5vh; /* Opcional, para bordes redondeados */
+}
