@@ -1,11 +1,12 @@
 .header{
-    width: 99%;
+    width: 95%;
     height: 10%;
     left: .5%;
     top: 0;
     position: fixed;
     display: flex;
     margin: auto;
+    margin-left: 2vh;
     color: black;
     border-bottom: .1vh solid black;
     backdrop-filter: blur(10px);

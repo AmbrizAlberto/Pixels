@@ -2,8 +2,7 @@
 
 .navbar {
     width: 14vh;
-    height: 100vh;
-    background-color: rgb(195, 195, 195);
+    height: 92vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,6 +14,10 @@
     transition: width 0.5s;
     color: black;
     z-index: 100;
+    border-radius: 3vh;
+    margin: 2vh 2vh 3vh 2vh;
+    backdrop-filter: blur(10px);
+    background-color: rgba(229, 228, 228, 0.585);
 }
 
 .navbar .logo {
